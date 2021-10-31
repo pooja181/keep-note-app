@@ -1,0 +1,11 @@
+<div>
+  <h3>Add Note Details</h3>
+  <!-- two-way binding using ngModel for note fields -->
+  <input class="input-box" [(ngModel)]="title" type="text" placeholder="Add title" />
+  <input class="input-box" [(ngModel)]="content" type="text" placeholder="Add Content" />
+
+  <button class="add-button" [disabled]="title.length==0 || content.length==0" caption="Add Note" (click)="addNote()">
+    Add Note
+  </button>
+
+</div>

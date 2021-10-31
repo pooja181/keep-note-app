@@ -1,0 +1,25 @@
+div{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+/* style rule for input fields */
+.input-box {
+    width : 80%;
+    margin: 1% 5%;
+    line-height: 1.5em;
+    border-radius: 0.4em;
+    padding: 5px;
+}
+
+/* style rule for add note button */
+.add-button {
+    display: flex;
+    margin: 1% auto;
+    line-height: 2em;
+    padding: 0.3%;
+    justify-content: flex-end;
+}

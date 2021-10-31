@@ -1,0 +1,25 @@
+<header>
+  <h1>KeepNote App</h1>
+  {{title}}
+</header>
+<!--Interpolation -Property Binding -->
+{{errorMessage}}
+<div style="display:inline-block; 
+          padding:5px; 
+          margin:10px; 
+          border: 1px solid darkgray;
+          box-shadow: 5px 5px lightgray;
+          border-radius: 5px;
+          max-height: 300px; 
+          height: 100%" *ngFor="let note of notes">
+
+  <h3>{{note.title}}</h3>
+  <p>{{note.content}}</p>
+</div>
+
+<app-add (noteAdded)="onNoteAdded($event)"></app-add>
+
+<!-- <div *ngIf="error"> -->
+<!-- Services unavailable. Please try again later. -->
+<!-- {{errorMessage}} -->
+<!-- </div> -->
